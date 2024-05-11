@@ -132,7 +132,7 @@ bool RX8025T_SetINTDisable(void)
     ReadRegister(REGADDR_CONTROL, &ucRegVal);
     // ucRegVal |= (CONTR_UIE);
     ucRegVal &= ~(CONTR_UIE);
-    WriteRegister(REGADDR_CONTROL, ucucRegVal);
+    WriteRegister(REGADDR_CONTROL, ucRegVal);
 
     return true;
 }
